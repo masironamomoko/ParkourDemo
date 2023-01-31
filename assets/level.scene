@@ -22,6 +22,9 @@
       },
       {
         "__id__": 7
+      },
+      {
+        "__id__": 10
       }
     ],
     "_active": true,
@@ -29,7 +32,7 @@
     "_prefab": null,
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 10
+      "__id__": 13
     },
     "_id": "31998512-739f-40a5-a9ba-765348838fe2"
   },
@@ -88,20 +91,20 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 250,
-      "b": 240,
+      "g": 244,
+      "b": 214,
       "a": 255
     },
     "_useColorTemperature": false,
-    "_colorTemperature": 6550,
+    "_colorTemperature": 8981,
     "_staticSettings": {
       "__id__": 4
     },
-    "_illuminanceHDR": 65000,
-    "_illuminance": 65000,
+    "_illuminanceHDR": 120000,
+    "_illuminance": 120000,
     "_illuminanceLDR": 1.6927083333333335,
-    "_shadowEnabled": false,
-    "_shadowPcf": 0,
+    "_shadowEnabled": true,
+    "_shadowPcf": 2,
     "_shadowBias": 0.00001,
     "_shadowNormalBias": 0,
     "_shadowSaturation": 1,
@@ -299,53 +302,142 @@
     "_lightmapSize": 64
   },
   {
-    "__type__": "cc.SceneGlobals",
-    "ambient": {
-      "__id__": 11
+    "__type__": "cc.Node",
+    "_name": "Player",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
     },
-    "shadows": {
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 11
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 1,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "9cjR0a61RGW5ZACahtVdzX"
+  },
+  {
+    "__type__": "cc.MeshRenderer",
+    "_name": "Cube<ModelComponent>",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_materials": [
+      {
+        "__uuid__": "0183864f-a16c-4ba6-b6b4-325340b0c620",
+        "__expectedType__": "cc.Material"
+      }
+    ],
+    "_visFlags": 0,
+    "lightmapSettings": {
       "__id__": 12
     },
-    "_skybox": {
-      "__id__": 13
+    "_mesh": {
+      "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@a804a",
+      "__expectedType__": "cc.Mesh"
     },
-    "fog": {
+    "_shadowCastingMode": 1,
+    "_shadowReceivingMode": 1,
+    "_shadowBias": 0,
+    "_shadowNormalBias": 0,
+    "_enableMorph": true,
+    "_id": "70JH/Bqc5BJpCOLgFA7ixt"
+  },
+  {
+    "__type__": "cc.ModelLightmapSettings",
+    "texture": null,
+    "uvParam": {
+      "__type__": "cc.Vec4",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 0
+    },
+    "_bakeable": false,
+    "_castShadow": false,
+    "_receiveShadow": false,
+    "_recieveShadow": false,
+    "_lightmapSize": 64
+  },
+  {
+    "__type__": "cc.SceneGlobals",
+    "ambient": {
       "__id__": 14
     },
-    "octree": {
+    "shadows": {
       "__id__": 15
+    },
+    "_skybox": {
+      "__id__": 16
+    },
+    "fog": {
+      "__id__": 17
+    },
+    "octree": {
+      "__id__": 18
     }
   },
   {
     "__type__": "cc.AmbientInfo",
     "_skyColorHDR": {
       "__type__": "cc.Vec4",
-      "x": 0.2,
-      "y": 0.5,
-      "z": 0.8,
+      "x": 0.4196078431372549,
+      "y": 0.4745098039215686,
+      "z": 0.6274509803921569,
       "w": 0.520833125
     },
     "_skyColor": {
       "__type__": "cc.Vec4",
-      "x": 0.2,
-      "y": 0.5,
-      "z": 0.8,
+      "x": 0.4196078431372549,
+      "y": 0.4745098039215686,
+      "z": 0.6274509803921569,
       "w": 0.520833125
     },
     "_skyIllumHDR": 20000,
     "_skyIllum": 20000,
     "_groundAlbedoHDR": {
       "__type__": "cc.Vec4",
-      "x": 0.2,
-      "y": 0.2,
-      "z": 0.2,
+      "x": 0.24705882352941178,
+      "y": 0.21568627450980393,
+      "z": 0.1568627450980392,
       "w": 1
     },
     "_groundAlbedo": {
       "__type__": "cc.Vec4",
-      "x": 0.2,
-      "y": 0.2,
-      "z": 0.2,
+      "x": 0.24705882352941178,
+      "y": 0.21568627450980393,
+      "z": 0.1568627450980392,
       "w": 1
     },
     "_skyColorLDR": {
@@ -366,8 +458,8 @@
   },
   {
     "__type__": "cc.ShadowsInfo",
-    "_enabled": false,
-    "_type": 0,
+    "_enabled": true,
+    "_type": 1,
     "_normal": {
       "__type__": "cc.Vec3",
       "x": 0,
@@ -382,7 +474,7 @@
       "b": 76,
       "a": 255
     },
-    "_maxReceived": 4,
+    "_maxReceived": 4194304,
     "_size": {
       "__type__": "cc.Vec2",
       "x": 1024,
