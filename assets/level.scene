@@ -501,6 +501,7 @@
       "__id__": 15
     },
     "forwardForce": 500,
+    "sideForce": 1000,
     "_id": "9fUu3WfaFEbKsuuDUotKLW"
   },
   {
